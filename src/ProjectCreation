@@ -1,0 +1,68 @@
+1. create a project in eclipse, name it as BankingProject
+
+2. create packages
+	1. accounts
+	2. transactions
+	
+3. In account package create a class by name account identify attributes, apply java bean class structure
+
+4. create a class in account package
+	purpose: responsible to create an account object return it
+	className: AccountCreation
+	method:
+		methodName: createAccount
+		parameter: same as attribute of account
+		return type: Account type
+		
+5. create a class in transaction 
+	purpose: class is responsible to do withdrawal transaction
+	className: WithdrawTransaction
+	method:
+		methodName: withdraw
+		parameter: two parameters
+				1. Account type
+				2. double type
+		return type: boolean
+		
+6. create a class in transaction 
+purpose: class is responsible to do deposit transaction
+className: DepositTransaction
+method:
+	methodName: deposit
+	parameter: two parameters
+			1. Account type
+			2. double type
+	return type: void
+	
+7. create a class in transaction 
+purpose: class is responsible to do fund transfer transaction
+className: FundTransfer
+method:
+	methodName: transfer
+	parameter: two parameters
+			1. Account type
+			2. Account type
+			3. double type
+	return type: boolean
+	
+8. create a class in transaction 
+purpose: class is responsible to print account balance
+className: ViewAccountBalance
+method:
+	methodName: viewBalance
+	parameter: one parameters
+			1. Account type
+	return type: void
+	
+	
+Main method flow:
+	Create new package app
+	inside write MainClass
+
+1. Create 2 account by using AccountCreation
+2. Create all transaction class objects
+3. Check Balance of first account
+4. Deposit x amount to first account
+5. Withdraw x amount from first account
+6. Transfer x amount from first account to second account
+7. Check Balance of both accounts
